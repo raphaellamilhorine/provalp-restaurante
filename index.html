@@ -1,0 +1,123 @@
+<!--P2 de Linguagens de Programação - Caio Vinicius Alves & Raphaella Macedo Parietti Milhorine-->
+
+<!--Essa é a página "Inicio"-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina da Toninha</title>
+    <!--Esse link rel é para a "conexão" com o Bootstrap, para poder utilizar seus recursos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+    
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Essa div é para a navegação entre páginas-->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="tabelas_horarios_etc.html">Cardápio</a>
+                </li>
+                
+
+            </ul>
+            
+            <!--Esse form é a barra de pesquisa no canto superior direito-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        
+    </nav>
+
+     <!--Esse container é a "caixa" que fica todo o conteúdo, os textos e a tabela de horários-->
+    <div class="container bg-light mt-5 rounded p-3">
+        <div class="row">
+            <div class="col-md-12 rounded p-3">
+                <h1>Bem-vindo(a) à Cantina da Toninha</h1>
+            </div>
+        </div>
+        <!--Essa é a mensagem de boas-vindas. Nela temos o comando de linha(row), e o separador de colunas, tamanho e número (col-md-8)-->
+        <!--O "rounded p-3" é o comando para arredondar as bordas do container-->
+        <div class="row">
+            <div class="col-md-8">
+                <p>Bem-vindo ao Restaurante da Toninha!
+
+                    É com muito carinho que recebemos você em nosso espaço. Aqui, oferecemos um ambiente acolhedor e
+                    pratos deliciosos preparados com ingredientes frescos e de qualidade. Nossa missão é proporcionar
+                    uma experiência única, onde você pode saborear o melhor da nossa culinária e se sentir em casa.
+
+                    Seja para um almoço descontraído, um jantar especial ou apenas para um cafezinho, estamos prontos
+                    para tornar seu momento ainda mais agradável.
+
+                    Esperamos que aproveite a sua visita e que volte sempre!
+
+                    A equipe do Restaurante da Toninha.</p>
+            </div>
+            
+            <!--Nessa div temos a tabela de horários de funcionamentos, sendo outro container com bg-light, que é um código para deixar o fundo que originalmente é branco, um pouco menos brilhante.-->
+            <div class="container bg-light mt-5 rounded p-3">
+                <h2>Horários de Funcionamento!</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>12:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>12:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>12:00 - 15:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</td>
+                            <td>12:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                            <td>12:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>12:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

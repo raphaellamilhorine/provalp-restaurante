@@ -1,0 +1,96 @@
+<!--P2 de Linguagens de Programação - Caio Vinicius Alves & Raphaella Macedo Parietti Milhorine
+Aqui temos todo um código para o formulário de contato. Utilizamos o sistema de Grid do Bootstrap 4 que contém as classes:
+container, row e col.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato com a gente!</title>
+    <!--Esse link rel é para a "conexão" com o Bootstrap, para poder utilizar seus recursos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+ 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="tabelas_horarios_etc.html">Cardápio</a>
+                </li>
+                
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+ 
+ 
+ 
+    <div class="container bg-light mt-5 rounded p-3">
+        <nav>
+        <h2>Formulário de Contato</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="nome" class="font-weight-bold">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome Aqui!">
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label for="email" class="font-weight-bold">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu E-Mail Aqui!">
+                </div>
+            </div>
+ <!--SISTEMA QUE AJUSTA PARA DIFERENTES TIPOS DE DISPOSITIVOS:
+
+O sistema de grid do Bootstrap usa 12 colunas, e o layout é ajustado conforme o tamanho da tela. As classes têm a seguinte estrutura:
+
+col-tamanho-número
+Exemplo: col-md-4-->
+ 
+            <div class="form-group">
+                <label for="telefone" class="font-weight-bold">Telefone (opcional)</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Seu Telefone Aqui! (opcional)">
+            </div>
+            <div class="form-group">
+                <label for="mensagem" class="font-weight-bold">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4"
+                    placeholder="Críticas, reclamações, elogios, o que quiser!"></textarea>
+            </div>
+            <button type="submit" class="p-3 mb-2 bg-warning text-dark font-weight-bold">Enviar</button>
+        </form>
+
+ <!--ESTRUTURA BÁSICA DO GRID EM HTML:
+
+A estrutura básica envolve três partes:
+
+container: para limitar a largura do layout (como se fosse uma caixa).
+row: para criar uma linha de colunas.
+col: para definir a largura das colunas (máximo de 12 colunas).-->
+    </nav>
+    </div>
+    </nav>
+    </div>
+    
+</body>
+
+</html>
